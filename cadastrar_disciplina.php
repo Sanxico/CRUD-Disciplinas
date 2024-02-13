@@ -32,15 +32,24 @@
 				type="text" />
             <br />
 			<br />
-				<label for='tipo'>Tipo: </label>
-				<input type='text' name='tipo' id='tipo' list='lsttipo'>
-				<datalist id='lsttipo'>
-					<option>Presencial</option>
-					<option>EaD (Educação a Distância)</option>
-					<option>Semipresencial</option>
-				</datalist>
+				Tipo Curso: 
+				<select name="tipo">
+					<option value="0">- selecione -</option>
+					<?php
+						$sql_tipo_cursos = "SELECT * FROM `tipo` ORDER BY id_tipo ASC";
+						$result = mysqli_query($con, $sql_tipo_cursos);
 
-			<br />
+						while ($dados_curso = mysqli_fetch_assoc($result)) {
+							?>
+							<option value="<?php echo $dados_curso['id_tipo'] ?>">
+								<?php echo $dados_curso['nome_tipo'] ?>
+							</option>
+							<?php
+						}
+					?>
+				</select>
+			<br/>
+			<br/>
 			<button type="submit">Enviar</button>
 		</form>
 	</body>
