@@ -25,7 +25,7 @@
         $unidade_academica = $_POST['unidade_academica'];
         $departamento = $_POST['departamento'];
         $carga_horaria = $_POST['carga_horaria'];
-        
+        $tipo = $_POST['tipo'];
         
         
 
@@ -35,7 +35,7 @@
         mysqli_select_db($con, "pawii");
 
         //agora vamos fazer uma string SQL simples para iserir os dados em uma tabela chamada disciplina
-        $sql_insere = "INSERT INTO disciplina (codigo_disciplina, nome_disciplina, campus, unidade_academica, departamento, carga_horaria) VALUES ('$codigo_disciplina', '$nome_disciplina', '$campus', '$unidade_academica', '$departamento', '$carga_horaria')"; //reparem que essa linha é apenas uma string dentro de uma variável
+        $sql_insere = "INSERT INTO disciplina (codigo_disciplina, nome_disciplina, campus, unidade_academica, departamento, carga_horaria, tipo) VALUES ('$codigo_disciplina', '$nome_disciplina', '$campus', '$unidade_academica', '$departamento', '$carga_horaria', '$tipo')"; //reparem que essa linha é apenas uma string dentro de uma variável
 
         //agora vamos de fato 'jogar' a string/variável para 'dentro' do banco de dados
         $result = mysqli_query($con, $sql_insere); //jogamos o resultado da query para 'dentro de uma variável' para podermos verificar se a inserção deu certo

@@ -43,13 +43,13 @@ CREATE TABLE `disciplina` (
 --
 
 INSERT INTO `disciplina` (`id`, `codigo_disciplina`, `nome_disciplina`, `campus`, `unidade_academica`, `departamento`, `carga_horaria`, `tipo`) VALUES
-(1, 307, 'Auditoria e Segurança de Dados', 'Cuiabá', 'UFMT', 'Computação', 60, '0'),
-(2, 307, 'Programação em Web 1', 'Cuiabá', '', 'Computação', 60, NULL),
-(3, 308, 'Programação em Web 2', 'Cuiabá', '', 'Computação', 60, NULL),
-(4, 308, 'Estágio Supervisionado', 'Cuiabá', 'UFMT', 'Computação', 400, NULL),
-(5, 690, 'Sistemas a Decisão', 'Rondonópolis', 'UFMT', 'Computação', 60, '0'),
-(8, 830, 'Computação Móvel', 'Cuiabá', 'UFMT', 'Computação', 60, '0'),
-(9, 50, 'Tópicos Esp em I A', 'Cuiabá', 'UFMT', 'Computação', 60, NULL);
+(1, 307, 'Auditoria e Segurança de Dados', 'Cuiabá', 'UFMT', 'Computação', 60, '1'),
+(2, 307, 'Programação em Web 1', 'Cuiabá', '', 'Computação', 60, '1'),
+(3, 308, 'Programação em Web 2', 'Cuiabá', '', 'Computação', 60, '1'),
+(4, 308, 'Estágio Supervisionado', 'Cuiabá', 'UFMT', 'Computação', 400, '3'),
+(5, 690, 'Sistemas a Decisão', 'Rondonópolis', 'UFMT', 'Computação', 60, '1'),
+(8, 830, 'Computação Móvel', 'Cuiabá', 'UFMT', 'Computação', 60, '2'),
+(9, 50, 'Tópicos Esp em I A', 'Cuiabá', 'UFMT', 'Computação', 60, '2');
 
 -- --------------------------------------------------------
 
